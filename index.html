@@ -1,0 +1,143 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TrustFix · Encuentra al Profesional Ideal en Minutos</title>
+<meta name="description" content="Marketplace de servicios técnicos con matching inteligente, pagos en custodia (Escrow) y garantía de satisfacción.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+/* Tokens de diseño (claro / oscuro) */
+:root{--b:#2563EB;--g:#10B981;--gd:#047857;--bg:#fff;--t:#1F2937;--m:#6B7280;--bd:#E5E7EB;--c:#fff;--l:#F3F4F6;--r:#DC2626;--gb:#D1FAE5;--gt:#065F46;--ab:#FEF3C7;--at:#92400E;--rb:#FEE2E2;--rt:#991B1B;color-scheme:light}
+@media(prefers-color-scheme:dark){:root{--b:#3B82F6;--bg:#0B1220;--t:#E5E7EB;--m:#9CA3AF;--bd:#273244;--c:#111A2E;--l:#16213A;--gb:#0D3B2E;--gt:#6EE7B7;--ab:#3A2B0B;--at:#FCD34D;--rb:#3D1618;--rt:#FCA5A5;color-scheme:dark}}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--t);line-height:1.55}
+a{color:inherit;text-decoration:none}small{color:var(--m)}h1{font-size:clamp(30px,6vw,52px);line-height:1.08;font-weight:800;letter-spacing:-.02em}h2{font-size:clamp(24px,4vw,34px);font-weight:800;letter-spacing:-.01em}h3{font-size:18px}
+.w{max-width:1080px;margin:auto;padding:0 20px}.sec{padding:56px 20px}.sub{color:var(--m);margin:6px 0 22px}
+nav{position:sticky;top:0;z-index:9;background:var(--bg);border-bottom:1px solid var(--bd)}.nv{display:flex;align-items:center;justify-content:space-between;gap:10px;height:58px}
+.lg{font-weight:800;display:flex;gap:8px;align-items:center}.lg i{background:var(--b);color:#fff;border-radius:8px;width:26px;height:26px;display:grid;place-items:center;font-style:normal;font-size:14px}
+.seg{display:flex;background:var(--l);border-radius:10px;padding:3px}.seg button{border:0;background:none;color:var(--m);padding:6px 11px;border-radius:8px;font:inherit;font-size:13px;font-weight:600;cursor:pointer}.seg .on{background:var(--c);color:var(--b);box-shadow:0 1px 3px #0002}
+.btn{padding:12px 20px;border-radius:10px;font:inherit;font-weight:600;border:1px solid transparent;cursor:pointer;display:inline-block;text-align:center}
+.p{background:var(--b);color:#fff}.s{background:var(--gd);color:#fff}.rd{background:var(--r);color:#fff}.o{background:var(--c);border-color:var(--bd);color:var(--t)}.sm{padding:8px 12px;font-size:13px}
+.hero{display:grid;gap:32px;padding:48px 20px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));align-items:center}.hero p{color:var(--m);font-size:18px;margin:14px 0 22px}.ctas{display:flex;gap:10px;flex-wrap:wrap}
+.tag{display:inline-block;background:var(--gb);color:var(--gt);font-size:13px;font-weight:600;padding:4px 12px;border-radius:99px;margin-bottom:14px}
+.card{background:var(--c);border:1px solid var(--bd);border-radius:16px;padding:20px;box-shadow:0 8px 30px #0000000d}
+.fl .n{display:flex;gap:10px;align-items:center;padding:9px 10px;border-radius:10px;cursor:pointer;border:1px solid transparent;transition:.3s}.fl .n b{width:26px;height:26px;border-radius:50%;background:var(--l);display:grid;place-items:center;font-size:12px}
+.fl .n.on{background:var(--l);border-color:var(--b)}.fl .n.on b{background:var(--b);color:#fff}.fl .d{margin-top:12px;padding:12px;border-radius:10px;background:var(--gb);color:var(--gt);font-weight:600;font-size:14px}
+.g3{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}.ic{width:44px;height:44px;border-radius:12px;background:var(--gb);color:var(--gd);display:grid;place-items:center;margin-bottom:12px}.ic svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2}
+.dh{display:flex;justify-content:space-between;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--bd)}
+.ch{display:inline-block;padding:3px 10px;border-radius:99px;font-size:12px;font-weight:600;background:var(--gb);color:var(--gt);margin:2px 4px 2px 0;border:0;font-family:inherit}.ch.am{background:var(--ab);color:var(--at)}.ch.rr{background:var(--rb);color:var(--rt)}button.ch{cursor:pointer}
+.sp{display:flex;gap:6px;margin:4px 0 4px}.sp i{flex:1;height:5px;border-radius:9px;background:var(--bd)}.sp i.on{background:var(--b)}
+.in{width:100%;border:1px solid var(--bd);background:var(--c);color:var(--t);border-radius:10px;padding:11px;font:inherit;margin:5px 0 10px}
+.opt{border:1px solid var(--bd);border-radius:12px;padding:14px;margin:8px 0;background:var(--c)}.opt.sel{border-color:var(--b);box-shadow:inset 0 0 0 1px var(--b)}
+.esc{border:2px solid var(--g);background:var(--gb);color:var(--gt);border-radius:14px;padding:16px;margin:12px 0}.esc h3{color:var(--gt)}
+.note{border-radius:10px;padding:10px 12px;margin:10px 0;font-size:14px;background:var(--ab);color:var(--at)}.note.g{background:var(--gb);color:var(--gt)}.note.r{background:var(--rb);color:var(--rt)}
+.row{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;padding:10px 0;border-bottom:1px solid var(--bd)}.ac{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}.tabs .btn{padding:7px 13px;font-size:13px}
+.tw{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:14px}td,th{padding:9px 6px;border-bottom:1px solid var(--bd);text-align:left;white-space:nowrap}
+.st{font-size:30px;color:#D1D5DB;cursor:pointer;border:0;background:none;padding:0 2px}.st.on{color:#F59E0B}
+.k{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}.k .card{padding:14px;box-shadow:none}.k b{font-size:22px;display:block}
+.band{background:var(--b);color:#fff;border-radius:20px;padding:36px 24px;text-align:center}.band .btn{margin:6px}.band .o{background:none;color:#fff;border-color:#fff8}
+footer{border-top:1px solid var(--bd);padding:30px 20px;color:var(--m);font-size:14px}footer .w{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.rv{opacity:0;transform:translateY(16px);transition:.6s}.rv.in{opacity:1;transform:none}
+@media(max-width:640px){.hd{display:none}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv{opacity:1;transform:none;transition:none}}
+</style></head><body>
+<!-- Navegación superior: cambia la vista de la demo -->
+<nav><div class="w nv"><a href="#" class="lg"><i>✓</i>TrustFix</a><div class="seg" id="seg"><button data-a="role" data-v="c">Cliente</button><button data-a="role" data-v="t">Técnico</button><button data-a="role" data-v="a">Admin</button></div><a class="btn p sm hd" href="#contacto" data-a="inv">Solicitar Demo</a></div></nav>
+
+<!-- 1. Hero -->
+<header class="w hero"><div><span class="tag">Marketplace de servicios técnicos</span><h1>Encuentra al Profesional Ideal en Minutos</h1><p>Conectamos clientes con técnicos verificados mediante inteligencia artificial, pagos protegidos y garantía de satisfacción.</p><div class="ctas"><button class="btn p" data-a="role" data-v="c">Solicitar Servicio</button><button class="btn o" data-a="role" data-v="t">Ser Técnico</button><a class="btn o" href="#demo">Ver Demo</a></div></div><div class="card fl" id="flow"></div></header>
+
+<!-- 2. Beneficios -->
+<section class="w sec rv"><div class="g3">
+<div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2l2.2 6.3L20 10l-5.8 1.7L12 18l-2.2-6.3L4 10l5.8-1.7z"/></svg></div><h3>Matching Inteligente</h3><p><small>Encontramos al profesional más adecuado para tu problema.</small></p></div>
+<div class="card"><div class="ic"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/></svg></div><h3>Pagos Protegidos</h3><p><small>Tu dinero permanece seguro hasta que confirmes que el trabajo fue realizado correctamente.</small></p></div>
+<div class="card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div><h3>Técnicos Verificados</h3><p><small>Identidad, antecedentes y documentación verificada.</small></p></div></div></section>
+
+<!-- 3-5. Demo interactiva -->
+<section id="demo" class="w sec rv"><h2>Recorre la plataforma completa</h2><p class="sub">Sin login ni backend. Cambia de vista en la barra superior para ver cada lado del marketplace. <span class="ch am">Demo con datos ficticios</span></p><div class="card"><div class="dh" id="dh"></div><div id="db"></div></div></section>
+
+<!-- 6. Sobre nosotros -->
+<section class="w sec rv" style="text-align:center;max-width:760px"><h2>Construimos confianza en los servicios técnicos</h2><p class="sub">TrustFix nace para resolver uno de los mayores problemas de Latinoamérica: encontrar profesionales confiables para trabajos técnicos y oficios. Nuestra plataforma utiliza tecnología, verificación de identidad y protección de pagos para generar confianza entre clientes y profesionales.</p></section>
+
+<!-- 7. Testimonios -->
+<section class="w sec rv"><h2>Lo que dicen nuestros usuarios</h2><p class="sub">Ejemplos ilustrativos para la demo: reemplázalos por testimonios reales antes de publicar.</p><div class="g3">
+<div class="card"><p>“Encontré un electricista certificado en menos de 20 minutos.”</p><p style="color:#F59E0B">★★★★★</p><small>Cliente</small></div>
+<div class="card"><p>“Por primera vez sentí que mi dinero estaba protegido.”</p><p style="color:#F59E0B">★★★★★</p><small>Cliente</small></div>
+<div class="card"><p>“He duplicado mis ingresos gracias a la plataforma.”</p><p style="color:#F59E0B">★★★★★</p><small>Técnico</small></div></div></section>
+
+<section class="w sec rv"><div class="band"><h2>Empieza hoy</h2><p style="margin:8px 0 16px;opacity:.9">Confianza para quien necesita ayuda y para quien la ofrece.</p><button class="btn s" data-a="role" data-v="c">Solicitar Servicio</button><button class="btn o" data-a="role" data-v="t">Convertirme en Técnico</button><a class="btn o" href="#contacto" data-a="inv">Solicitar Demo</a></div></section>
+
+<!-- 8. Contacto -->
+<section id="contacto" class="w sec rv" style="max-width:640px"><h2>Hablemos</h2><p class="sub">Déjanos tus datos y te contactamos.</p><form id="cf" class="card"><input class="in" placeholder="Nombre" required><input class="in" type="tel" placeholder="Teléfono"><input class="in" type="email" placeholder="Email" required><select class="in" id="tu"><option>Cliente</option><option>Técnico</option><option>Inversionista</option></select><textarea class="in" rows="3" placeholder="Comentario"></textarea><button class="btn p" style="width:100%">Solicitar Información</button></form></section>
+
+<!-- 9. Footer -->
+<footer><div class="w"><span class="lg"><i>✓</i>TrustFix</span><span><a href="#">Términos y Condiciones</a> · <a href="#">Política de Privacidad</a></span><span><a href="#">Facebook</a> · <a href="#">Instagram</a> · <a href="#">LinkedIn</a> · <a href="#">WhatsApp</a></span></div></footer>
+
+<script>
+document.documentElement.classList.add('js');
+/* ---------- Datos ficticios ---------- */
+const $=s=>document.querySelector(s),M=n=>'$'+Math.round(n).toLocaleString('es-CL'),ch=(t,c='')=>`<span class="ch ${c}">${t}</span>`;
+const TECH=[{n:'Carlos Muñoz',r:'Electricista SEC',t:98,y:12,e:18,m:98,b:['Verificado','Certificado SEC']},{n:'Javier Soto',r:'Electricista Residencial',t:95,y:8,e:22,m:95,b:['Verificado']},{n:'Felipe Rojas',r:'Electricista Industrial',t:93,y:10,e:35,m:93,b:['Verificado']}];
+const REQ=[['Calefont no enciende','Providencia','hace 2 min'],['Cortocircuito en tablero','Ñuñoa','hace 7 min'],['Instalar focos LED','Santiago','hace 12 min']];
+const OPT={Electricista:['Certificación SEC','Instalaciones domiciliarias','Instalaciones industriales'],'Mecánico':['Frenos','Motor','Scanner','Transmisión']};
+const S={role:'c',st:1,pick:0,type:'',stars:5,ph:0,busy:0,tt:'ob',ob:{s:1,k:'Electricista',n:'',c:[],x:[],d:[],done:0,err:0},at:'m',as:[0,null,null],ia:[1,0,0],vq:['Verificado','Pendiente','Rechazado'],arb:'',disp:0,sent:0};
+const tg=(a,v)=>{const i=a.indexOf(v);i<0?a.push(v):a.splice(i,1)};
+const tabs=(list,cur,key)=>`<div class="tabs">${list.map(([k,n])=>`<button class="btn ${cur==k?'p':'o'}" data-a="${key}" data-v="${k}">${n}</button>`).join('')}</div>`;
+
+/* ---------- Hero: flujo animado ---------- */
+const FL=[['Cliente','“Mi calefont no enciende”'],['Matching IA','Carlos Muñoz · 98% Match'],['Técnico','Verificado, llega en 18 min'],['Escrow','$25.000 en custodia segura'],['Trabajo Completado','Cliente confirma y se libera el pago']];let fi=0;
+function flow(){$('#flow').innerHTML=FL.map((f,i)=>`<div class="n ${i==fi?'on':''}" data-a="fl" data-v="${i}"><b>${i+1}</b><span>${f[0]}</span></div>`).join('')+`<div class="d">${FL[fi][1]}</div>`}
+setInterval(()=>{fi=(fi+1)%5;flow()},2200);
+
+/* ---------- Vista Cliente ---------- */
+function cli(){const P=TECH[S.pick],A=S.type=='A',tot=A?25000:65000,com=tot*.15,N=['Solicitud','Matching IA','Tipo de servicio','Pago Escrow','Cierre'],s=Math.min(S.st,5);let b='';
+const sp=`<div class="sp">${[1,2,3,4,5].map(i=>`<i class="${i<=s?'on':''}"></i>`).join('')}</div><small>Paso ${s} de 5: ${N[s-1]}</small>`;
+if(S.st==1)b=`<h3>¿Qué problema necesitas resolver?</h3><textarea class="in" rows="3">Mi calefont no enciende</textarea><button class="btn o" data-a="ph">${S.ph?'✔ 2 fotos adjuntas (simuladas)':'📷 Adjuntar fotos'}</button> <button class="btn p" data-a="match">Buscar profesional</button>`;
+if(S.st==2&&S.busy)b=`<div style="text-align:center;padding:30px"><h3>Matching IA en proceso…</h3><p><small>Cruzando ubicación, especialidad y Trust Score</small></p></div>`;
+else if(S.st==2)b=`<span class="ch am">PROFESIONAL IDEAL ASIGNADO</span><div class="opt sel"><h3>${P.n}</h3><small>${P.r} · ${P.y} años de experiencia</small><div style="margin:8px 0">${ch(P.m+'% Match')}${ch('Trust Score '+P.t)}${ch('Llegada '+P.e+' min')}</div>${P.b.map(x=>ch('✅ '+x)).join('')}${ch('✅ Garantía de Satisfacción')}</div><small>Alternativas</small>${TECH.map((t,i)=>i==S.pick?'':`<div class="row"><div><b>${t.n}</b><br><small>${t.r} · ${t.m}% Match · ${t.e} min</small></div><button class="btn o sm" data-a="pick" data-v="${i}">Elegir</button></div>`).join('')}<button class="btn p" style="margin-top:12px" data-a="go" data-v="3">Continuar con ${P.n.split(' ')[0]}</button>`;
+if(S.st==3)b=`<h3>Elige cómo se cobra el servicio</h3><div class="opt"><span class="ch">Tipo A · Servicio estandarizado</span><h3>Destape simple</h3><p>Precio fijo: <b>$25.000 CLP</b></p><button class="btn s" data-a="type" data-v="A">Confirmar y Pagar</button></div><div class="opt"><span class="ch am">Tipo B · Servicio variable</span><h3>Diagnóstico mecánico</h3><p>Tarifa de visita: <b>$10.000 CLP</b></p><small>Este monto será descontado del trabajo final si aceptas el presupuesto.</small><br><br><button class="btn p" data-a="type" data-v="B">Pagar visita</button></div>`;
+if(S.st==4)b=`<div class="esc"><h3>🔒 Tu dinero está protegido</h3><p>Los fondos sólo serán liberados cuando confirmes que el trabajo fue realizado satisfactoriamente.</p><p><b>${M(A?25000:10000)} en custodia</b></p></div>${A?'':`<div class="note g">Presupuesto en terreno enviado por el técnico: mano de obra $45.000 + materiales $20.000 − visita abonada $10.000 = <b>$55.000</b> adicionales, también en Escrow.</div>`}<small>Cotización y cobro viven dentro de la app: pagar por fuera te deja sin garantía.</small><br><button class="btn s" style="margin-top:10px" data-a="go" data-v="5">Simular pago y ejecutar servicio</button>`;
+if(S.st==5)b=`<h3>Trabajo finalizado</h3><p><small>${P.n} marcó el trabajo como terminado. ¿Cómo quedó?</small></p><div>${[1,2,3,4,5].map(i=>`<button class="st ${i<=S.stars?'on':''}" data-a="star" data-v="${i}" aria-label="${i} estrellas">★</button>`).join('')}</div><div class="ac" style="margin-top:10px"><button class="btn s" data-a="ok">Confirmar Trabajo Exitoso</button><button class="btn rd" data-a="bad">Reportar Problema</button></div>`;
+if(S.st==6)b=`<div class="esc"><h3>✅ Pago liberado</h3><p>Gracias por calificar con ${S.stars} estrellas.</p></div><div class="k"><div class="card"><small>Total del servicio</small><b>${M(tot)}</b></div><div class="card"><small>Comisión TrustFix (15 %)</small><b>${M(com)}</b></div><div class="card"><small>Recibe el técnico</small><b>${M(tot-com)}</b></div></div><button class="btn o" style="margin-top:12px" data-a="reset">Reiniciar demo</button>`;
+if(S.st==7)b=`<div class="note r"><b>Pago congelado.</b> Un árbitro revisará la evidencia de ambas partes. Míralo en Vista Admin, pestaña Arbitraje.</div><button class="btn p" data-a="role" data-v="a">Ir a Vista Admin</button> <button class="btn o" data-a="reset">Reiniciar demo</button>`;
+return sp+'<div style="margin-top:14px">'+b+'</div>'}
+
+/* ---------- Vista Técnico ---------- */
+function tec(){const o=S.ob,q=`<div class="note"><b>⭐ Los 5 de Oro</b> Te encuentras en período de evaluación inicial. Trabajos: 2 de 5, fondos retenidos 48 h tras cada servicio.</div>`;let b='';
+const chips=(list,k)=>list.map(x=>`<button class="ch ${o[k].includes(x)?'':'am'}" data-a="tgo" data-v="${k}|${x}">${o[k].includes(x)?'✔ ':''}${x}</button>`).join('');
+if(S.tt=='ob'){if(o.done)b=`<div class="esc"><h3>✅ Solicitud enviada</h3><p>Tu verificación quedó en la cola del Admin. Mientras tanto, estás en “Los 5 de Oro”.</p></div><button class="btn o" data-a="obr">Repetir onboarding</button>`;
+else{const op=OPT[o.k]||['Más de 5 años de experiencia','Herramientas propias'];b=`<div class="sp">${[1,2,3].map(i=>`<i class="${i<=o.s?'on':''}"></i>`).join('')}</div><small>Paso ${o.s} de 3 (menos de 3 minutos)</small><div style="margin-top:12px">`+
+(o.s==1?`<small>Nombre</small><input class="in" id="nm" value="${o.n}" placeholder="Nombre completo"><small>Oficio</small><select class="in" id="ok">${['Electricista','Mecánico','Gasfíter','Cerrajero'].map(x=>`<option ${o.k==x?'selected':''}>${x}</option>`).join('')}</select><small>Comunas</small><div>${chips(['Providencia','Ñuñoa','Santiago','Las Condes','Maipú'],'c')}</div><small>Radio de cobertura</small><select class="in"><option>5 km</option><option selected>10 km</option><option>20 km</option></select>`:
+o.s==2?`<small>${o.k}: especialidades</small><div style="margin:8px 0">${op.map(x=>`<button class="ch ${o.x.includes(x)?'':'am'}" data-a="tgo" data-v="x|${x}">${o.x.includes(x)?'✔ ':''}${x}</button>`).join('')}</div>`:
+`<small>Sube tus documentos</small>${['Carnet','Selfie','Certificado de antecedentes','Foto de herramientas'].map(x=>`<button class="opt ${o.d.includes(x)?'sel':''}" style="display:block;width:100%;text-align:left;font:inherit;color:inherit" data-a="tgo" data-v="d|${x}">${o.d.includes(x)?'✔ ':'📄 '}${x}</button>`).join('')}${o.err?'<div class="note r">Sube los 4 documentos para continuar.</div>':''}`)+
+`</div><div class="ac">${o.s>1?'<button class="btn o" data-a="obp">Atrás</button>':''}<button class="btn p" data-a="obn">${o.s<3?'Siguiente':'Enviar a verificación'}</button></div>`}}
+if(S.tt=='rad')b=[['Falla de calefont','2,3 km','2 fotos','$25.000'],['Tablero sin energía','4,1 km','1 foto','$10.000 + cotización']].map(j=>`<div class="row"><div><b>${j[0]}</b><br><small>📍 ${j[1]} · 📷 ${j[2]} · Pago estimado ${j[3]}</small></div><button class="btn p sm" data-a="acc">Aceptar</button></div>`).join('')+`<h3 style="margin:18px 0 6px">Generador de cotización</h3><small>Mano de obra</small><input class="in" id="lab" type="number" value="45000"><small>Materiales</small><input class="in" id="mat" type="number" value="20000"><small>Diagnóstico abonado (se descuenta)</small><input class="in" id="dia" type="number" value="10000"><div class="row"><b>Total a cobrar</b><b id="tot">$55.000</b></div><button class="btn s" data-a="sendq" style="margin-top:8px">Enviar Cotización</button>${S.sent?'<div class="note g">Cotización enviada a la app del cliente.</div>':''}`;
+if(S.tt=='wal')b=`<div class="k">${[['Ganancias totales','$1.250.000'],['Retenido en Escrow','$150.000'],['Disponible','$1.100.000'],['Comisión plataforma','15 %']].map(x=>`<div class="card"><small>${x[0]}</small><b>${x[1]}</b></div>`).join('')}</div><p><small>La comisión se descuenta automáticamente al liberar cada pago.</small></p>`;
+return q+tabs([['ob','Onboarding'],['rad','Radar y cotización'],['wal','Billetera']],S.tt,'tt')+b}
+
+/* ---------- Vista Admin ---------- */
+function adm(){let b='';
+if(S.at=='m')b=REQ.map((r,i)=>`<div class="row"><div><b>${r[0]}</b><br><small>${r[1]} · ${r[2]}</small><br>${S.as[i]!=null?ch('Asignado: '+TECH[S.as[i]].n):ch('Sin asignar','am')}</div><div class="ac"><select class="in" style="width:auto;margin:0" id="s${i}">${TECH.map((t,j)=>`<option value="${j}" ${S.as[i]===j?'selected':''}>${t.n}</option>`).join('')}</select><button class="btn o sm" data-a="as" data-v="${i}">${S.as[i]==null?'Asignar':'Reasignar'}</button><button class="ch ${S.ia[i]?'':'am'}" data-a="ia" data-v="${i}">${S.ia[i]?'★ IA Recomendada':'Marcar IA Recomendada'}</button></div></div>`).join('');
+if(S.at=='v')b=`<div class="tw"><table><tr><th>Técnico</th><th>Estado</th><th>Acción</th></tr>${TECH.map((t,i)=>`<tr><td>${t.n}</td><td>${ch(S.vq[i],S.vq[i]=='Verificado'?'':S.vq[i]=='Pendiente'?'am':'rr')}</td><td><button class="btn o sm" data-a="vq" data-v="${i}|Verificado">Aprobar</button> <button class="btn o sm" data-a="vq" data-v="${i}|Rechazado">Rechazar</button></td></tr>`).join('')}</table></div>`;
+if(S.at=='a')b=(S.disp?'<div class="note r">Este caso viene de tu recorrido en la Vista Cliente.</div>':'')+`<div class="g3"><div class="card"><small>Cliente</small><p>“El problema no quedó resuelto.”</p>${ch('📷 evidencia.jpg','rr')}</div><div class="card"><small>Técnico</small><p>“Se realizó reparación completa.”</p>${ch('📷 trabajo_final.jpg')}</div></div><p style="margin:12px 0 6px"><b>Pago congelado: $25.000</b></p><div class="ac"><button class="btn rd" data-a="arb" data-v="Se devolvió el 100 % al cliente.">Devolver 100%</button><button class="btn o" data-a="arb" data-v="Se exigió al técnico repetir el trabajo.">Repetir Trabajo</button><button class="btn s" data-a="arb" data-v="Se liberó el pago al técnico.">Liberar Pago</button></div>${S.arb?`<div class="note g">Resolución: ${S.arb}</div>`:''}`;
+if(S.at=='i')b=`<div class="tw"><table><tr><th>Técnico</th><th>Tiempo respuesta</th><th>Desviación precio</th><th>Recompra cliente</th><th>Trust Score</th></tr>${[[4,2,61],[6,4,52],[9,5,47]].map((x,i)=>`<tr><td>${TECH[i].n}</td><td>${x[0]} min</td><td>${x[1]} %</td><td>${x[2]} %</td><td><b>${TECH[i].t}</b></td></tr>`).join('')}</table></div><p><small>Variables ocultas que alimentan el matching: rapidez, precisión del presupuesto y recurrencia.</small></p>`;
+return tabs([['m','Mago de Oz'],['v','Verificación'],['a','Arbitraje'],['i','Métricas Trust Score']],S.at,'at')+b}
+
+/* ---------- Render y eventos ---------- */
+function render(){document.querySelectorAll('#seg button').forEach(b=>b.classList.toggle('on',b.dataset.v==S.role));
+$('#dh').innerHTML=`<b>Vista ${{c:'Cliente',t:'Técnico',a:'Admin'}[S.role]}</b><small>Demo sin login</small>`;$('#db').innerHTML={c:cli,t:tec,a:adm}[S.role]()}
+const R0=()=>Object.assign(S,{st:1,pick:0,type:'',stars:5,ph:0,busy:0,disp:0});
+document.addEventListener('click',e=>{const b=e.target.closest('[data-a]');if(!b)return;const a=b.dataset.a,v=b.dataset.v,o=S.ob;
+if(a=='fl'){fi=+v;return flow()}if(a=='inv'){$('#tu').value='Inversionista';return}
+if(a=='role'){S.role=v;$('#demo').scrollIntoView()}
+else if(a=='ph')S.ph=1;else if(a=='match'){S.st=2;S.busy=1;setTimeout(()=>{S.busy=0;render()},1800)}
+else if(a=='pick')S.pick=+v;else if(a=='go')S.st=+v;else if(a=='type'){S.type=v;S.st=4}
+else if(a=='star')S.stars=+v;else if(a=='ok')S.st=6;else if(a=='bad'){S.st=7;S.disp=1}else if(a=='reset')R0();
+else if(a=='tt')S.tt=v;else if(a=='at')S.at=v;else if(a=='tgo'){const[k,x]=v.split('|');tg(o[k],x);o.err=0}
+else if(a=='obn'){if(o.s<3)o.s++;else if(o.d.length<4)o.err=1;else o.done=1}else if(a=='obp')o.s--;
+else if(a=='obr')Object.assign(o,{s:1,c:[],x:[],d:[],done:0,err:0});else if(a=='acc'){b.textContent='✔ Aceptado';b.disabled=true;return}
+else if(a=='sendq')S.sent=1;else if(a=='as')S.as[+v]=+$('#s'+v).value;else if(a=='ia')S.ia[+v]^=1;
+else if(a=='vq'){const[i,x]=v.split('|');S.vq[i]=x}else if(a=='arb')S.arb=v;
+render()});
+document.addEventListener('input',e=>{const t=e.target;if(t.id=='nm')S.ob.n=t.value;if(['lab','mat','dia'].includes(t.id))$('#tot').textContent=M(Math.max(0,(+$('#lab').value||0)+(+$('#mat').value||0)-(+$('#dia').value||0)))});
+document.addEventListener('change',e=>{if(e.target.id=='ok'){S.ob.k=e.target.value;S.ob.x=[];render()}});
+$('#cf').addEventListener('submit',e=>{e.preventDefault();e.target.innerHTML='<h3>¡Gracias! Te contactaremos pronto.</h3>'});
+const io=new IntersectionObserver(en=>en.forEach(x=>x.isIntersecting&&x.target.classList.add('in')),{threshold:.1});document.querySelectorAll('.rv').forEach(x=>io.observe(x));
+flow();render();
+</script></body></html>
